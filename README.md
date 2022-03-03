@@ -13,3 +13,21 @@ Try running the following commands:
 - Join the [dbt community](http://community.getbdt.com/) to learn from other analytics engineers
 - Find [dbt events](https://events.getdbt.com) near you
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+
+---
+
+# dbt run -m dim_customers
+モデルを指定してrunする
+
+# config
+
+```
+{{
+  config(
+    materialized='table'
+  )
+}}
+```
+
+これを指定すると、Snowflake上にテーブルが作成できる。  
+指定しないと、テーブルではなくviewが作成される
