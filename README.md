@@ -35,3 +35,26 @@ Try running the following commands:
 
 # commands
 `dbt docs generate`
+
+# dbt用語(Model Naming Conventions)
+## Sources
+- the raw data that has already been loaded
+
+## Staging
+- clean and standardize the data
+- one to one with source tables
+
+## Intermediate 
+- models between staging and final models
+- always built on staging models
+
+## Fact 
+- things that are occuring or have occurred
+- events, clicks, votes
+
+## Dimension
+- people, place or thing
+- users, companies, products, customers
+
+## メモ
+- Lineage Graphにおいて、緑色で示されるのがSources.
