@@ -31,3 +31,7 @@ Try running the following commands:
 
 これを指定すると、Snowflake上にテーブルが作成できる。  
 指定しないと、テーブルではなくviewが作成される
+
+
+# commands
+`dbt docs generate`
